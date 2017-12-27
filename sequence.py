@@ -17,7 +17,7 @@ class JoinMQBError(Exception):
 class Context(object):
 
     def __init__(self, **kwargs):
-        self.context = {**kwargs}
+        self.context = kwargs
 
     def __getitem__(self, item):
         return self.context.get(item)
